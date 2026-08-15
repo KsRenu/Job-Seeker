@@ -10,7 +10,7 @@ public class EmailSender {
     public static void sendEmail(String to, String subject, List<String> listItems) throws MessagingException {
 
         String from = "";
-        String password = ""; // use App Password, not your real password
+        String password = "";
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -24,7 +24,7 @@ public class EmailSender {
             }
         });
 
-        // Build the body from the list
+        
         StringBuilder body = new StringBuilder();
         body.append("Infosys Career Opportunities: ");
         int count = 1;
